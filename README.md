@@ -38,7 +38,9 @@ VoiceNav uses **Gemini Vision AI** and **Google Cloud Vision OCR** to identify b
 ## 🚀 3. Key Features
 - **AI Bus Identification:** Real-time recognition of bus numbers and routes using Gemini 2.5 Flash.
 - **Live Movement Alerts:** Tracking bus arrivals and GPS movements with voice notifications.
+- **Trip Planning & Safety:** Smart route suggestions between destinations with emergency features.
 - **Hands-Free Control:** Simple mic features and gesture-based navigation (swipes and double-taps).
+- **Voice Command Bus Selection:** Interrupt announcements by saying route numbers (e.g., "581").
 - **Haptic Feedback:** Vibration alerts for safety and directional guidance.
 
 ---
@@ -67,9 +69,12 @@ The application acts as a bridge between the physical world and AI processing, t
 
 ### Workflow Steps:
 1. **Initialize:** Load GPS location and establish API connections.
-2. **Action:** User double-taps to trigger voice command (e.g., "Where is bus 400?").
-3. **Analysis:** User swipes to activate camera; Gemini Vision identifies the approaching bus.
-4. **Feedback:** System announces the bus status via Text-to-Speech (TTS).
+2. **Navigation Options:**
+   - **Double-tap:** Quick bus tracking with voice commands (e.g., "Where is bus 581?")
+   - **Swipe left:** Activate camera for AI-powered bus identification
+   - **Swipe right:** Open trip planning with route suggestions and safety features
+3. **Analysis:** Gemini Vision identifies approaching buses and obstacles in real-time.
+4. **Feedback:** System announces bus status, routes, and safety alerts via Text-to-Speech (TTS).
 
 
 
